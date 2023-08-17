@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <!---TypedJS CDN--->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/custom.css" />
+    <link rel="stylesheet" href="dist/aos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="col-12 text-center"
+          data-aos="flip-right"
+          data-aos-duration="3000"
+          data-aos-delay="100"
+        >
+          <h3 class="text-light"><span class="element"></span></h3>
+          <button class="btn btn-outline-light btn-lg" id="generateBtn">
+            Generate Quote
+          </button>
+          <div class="card shadow px-5 py-5 mt-3" id="quoteContainer">
+            <p id="quote"></p>
+            <h4 class="writer" id="writer"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/js/custom.js"></script>
+    <script src="dist/aos.js"></script>
+    <script>
+      AOS.init();
+      var typed = new Typed(".element", {
+        strings: [
+          "Step Out With A Beautiful Quote",
+          "Be Inspired By Great Quotes",
+          "Discover & Explore Million Quotes",
+          "Memorize Quotes That Transform Life",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(194, 88, 88, 0.6)),url('/images/gif.gif'), no-repeat;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+#quoteContainer {
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.writer {
+    font-family: 'Cookie', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: "700"
+}
+p {
+    font-size: 18px;
+}
